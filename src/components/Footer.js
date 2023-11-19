@@ -1,0 +1,16 @@
+const Footer = () => {
+  return (
+  <footer className="wrapper">
+    <p>v24.0.7</p>
+    <div>
+      <a href="https://prepr.org/privacy-policy/" target="_blank">Privacy policy</a>
+      <a href="https://prepr.org/terms-of-use" target="_blank">Terms of use</a>
+      <a href="https://intercom.help/preprme/en/" target="_blank">Help Center</a>
+    </div>
+    <p>Powered by <a href="https://learnlab.ai/" target="_blank">LearnLab.ai</a></p>
+
+  </footer>
+  )
+}
+
+export default Footer;
