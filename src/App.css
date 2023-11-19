@@ -27,7 +27,7 @@ ul {
 
 .wrapper {
   max-width: 1300px;
-  /* width: 100%; */
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -42,36 +42,55 @@ ul {
 /* NAVIGATION */
 .navContainer {
   border-bottom: 1px solid #D8DCDF;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 nav {
-  padding: 14px 0;
+  padding: 7px 30px;
   color: #8b8b8b;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 700;
+}
+
+.preprLogo {
+  max-width: 100px;
+  min-width: 100px;
 }
 
 nav ul {
   display: flex;
   align-items: center;
-  gap: 3rem;
 }
 
-.navBarIcons {
+nav li {
+  padding: 0 2.2rem;
+}
+
+.navBarIcons li {
   font-size: 2.5rem;
-  color: #6B6C79;
+  color: #56565a;
+  padding: 0 1.5rem;
 }
 
-.preprLogo {
-  max-width: 55%;
+.navBarIcons .userIcons {
+  font-size: 4rem;
 }
+
+.userIcons img {
+  max-width: 50px;
+  min-width: 50px;
+}
+
+
 
 .navSearchBar input {
   padding: 0.9rem;
   font-size: 1.6rem;
-  /* font-weight: 600; */
   border: 1px solid #CCD2D8;
   border-radius: 0 5px 5px 0;
   width: 260px;
@@ -84,11 +103,12 @@ color: red;
 /* HEADER */
 header {
   background: linear-gradient(90deg, rgba(213,255,198,1) 0%, rgba(124,210,241,1) 100%);
-  height: calc(100vh - 40px);
+  min-height: calc(100vh + 40px);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 18rem 0;
 }
 
 header h1 {
@@ -97,10 +117,26 @@ header h1 {
 
 header h2 {
   font-size: 2.8rem;
+  line-height: 3.5rem;
 }
 
 header p {
   font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 1.2rem 0 0 0;
+}
+
+header div {
+  width: 50%;
+}
+
+.headerSearchBar input {
+  width: 95%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border: 1px solid #DCDCDC;
+  border-radius: 0 10px 10px 0;
+  margin: 6.5rem 0;
 }
 
 /* FOOTER */
