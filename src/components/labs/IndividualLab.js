@@ -34,7 +34,7 @@ const IndividualLab = () => {
 
         <p className='individualLabDescription'>If you're here then you're a passionate employment service provider who’s constantly looking for new tools and concepts. We've prepared a series of Challenges just for you! The Challenges in this Lab are designed to help you learn how you can get the most out of our platform, get started today!</p>
 
-        <a href="" className='greyButton'>Prepr Labs</a>
+        <a href="https://preprlabs.org/skillrelated/37174/lab" className='greyButton'>Prepr Labs</a>
 
       </div> {/* END individualLabContainerRight */}
 
