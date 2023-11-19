@@ -81,6 +81,27 @@ nav ul {
 color: red;
 } */
 
+/* HEADER */
+header {
+  background: linear-gradient(90deg, rgba(213,255,198,1) 0%, rgba(124,210,241,1) 100%);
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header h2 {
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.6rem;
+}
 
 /* FOOTER */
 footer {
