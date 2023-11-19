@@ -39,6 +39,48 @@ ul {
   font-family: 'Arial', sans-serif;
 }
 
+/* NAVIGATION */
+.navContainer {
+  border-bottom: 1px solid #D8DCDF;
+}
+
+nav {
+  padding: 14px 0;
+  color: #8b8b8b;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navBarIcons {
+  font-size: 2.5rem;
+  color: #6B6C79;
+}
+
+.preprLogo {
+  max-width: 55%;
+}
+
+.navSearchBar input {
+  padding: 0.9rem;
+  font-size: 1.6rem;
+  /* font-weight: 600; */
+  border: 1px solid #CCD2D8;
+  border-radius: 0 5px 5px 0;
+  width: 260px;
+}
+
+/* .navSearchBar ::placeholder {
+color: red;
+} */
+
 
 /* FOOTER */
 footer {
