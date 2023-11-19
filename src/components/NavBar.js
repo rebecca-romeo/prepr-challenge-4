@@ -4,7 +4,7 @@ import userImg from '../assets/userImg.png'
 const NavBar = () => {
   return (
     <div className="navContainer">
-      <nav className="arial">
+      <nav className='bold'>
 
         <div>
           <a href="https://preprlabs.org/explore"><img src={preprLogo} alt="prepr labs logo" className="preprLogo" /></a>
@@ -26,7 +26,7 @@ const NavBar = () => {
 
         <form className="navSearchBar">
           <label htmlFor="navBarSearch"></label>
-          <input type="text" placeholder="Search..." name="navBarSearch" className="arial" />
+          <input type="text" placeholder="Search..." name="navBarSearch" />
         </form>
 
           <li className="userIcons"><img src={userImg} alt="" /></li>
