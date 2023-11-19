@@ -11,9 +11,19 @@ html {
   font-size: 62.5%;
 }
 
-body, p, a, ul, h1, h2 {
+body,
+p,
+a,
+ul,
+h1,
+h2 {
   margin: 0;
   padding: 0;
+}
+
+body, button, input {
+  font-size: 1.6rem;
+  font-family: 'Arial', sans-serif;
 }
 
 a {
@@ -35,7 +45,16 @@ ul {
   font-family: 'Poppins', sans-serif;
 }
 
-.arial {
+.bold {
+  font-weight: 700;
+}
+
+.btnBlue {
+  background-color: #498CCE;
+  color: white;
+  border: none;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -51,10 +70,10 @@ nav {
   padding: 7px 30px;
   color: #8b8b8b;
   font-size: 1.5rem;
+  line-height: 1.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 700;
 }
 
 .preprLogo {
@@ -90,7 +109,6 @@ nav li {
 
 .navSearchBar input {
   padding: 0.9rem;
-  font-size: 1.6rem;
   border: 1px solid #CCD2D8;
   border-radius: 0 5px 5px 0;
   width: 260px;
@@ -102,7 +120,7 @@ color: red;
 
 /* HEADER */
 header {
-  background: linear-gradient(90deg, rgba(213,255,198,1) 0%, rgba(124,210,241,1) 100%);
+  background: linear-gradient(90deg, rgba(213, 255, 198, 1) 0%, rgba(124, 210, 241, 1) 100%);
   min-height: calc(100vh + 40px);
   display: flex;
   justify-content: center;
@@ -133,26 +151,100 @@ header div {
 .headerSearchBar input {
   width: 95%;
   padding: 1.5rem;
-  font-size: 1.6rem;
   border: 1px solid #DCDCDC;
   border-radius: 0 10px 10px 0;
   margin: 6.5rem 0;
 }
+
 .exploreRecommendations {
   /* border: 2px solid red; */
   margin: 2rem auto;
   width: 90%;
 }
-.exploreRecommendations li {
+
+.exploreRecommendations li,
+.greyButton {
   display: inline-block;
   font-size: 1.3rem;
   background-color: #F3F4F8;
   border: 1px solid #C8C8C8;
   border-radius: 10px;
-  padding: 0.8rem 0.6rem;
+  padding: 0.8rem;
   margin: 1rem;
   cursor: pointer;
 }
+
+
+
+/* MAIN - LABS */
+
+main {
+  background-color: #F3F7FC;
+  height: 500px;
+  padding-top: 5rem;
+}
+
+.blue {
+  color: #498CCE;
+}
+
+.individualLabContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 80%;
+  padding: 1.5rem;
+  /* border: 1px solid #E9EDF2; */
+  border-radius: 10px;
+  margin: 0 0 0 20rem;
+  box-shadow: 4px 5px 6px 1px #B8BBBF;
+}
+
+.individualLabContainerLeft {
+  width: 20%;
+}
+
+.individualLabContainerLeft img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.heart, .share {
+  padding: 0 0.5rem 0 1rem;
+}
+
+.individualLabContainerLeft p {
+padding: 2rem 0;
+}
+
+
+.individualLabContainerRight {
+  width: 75%;
+  /* padding-left: 1.5rem; */
+}
+
+.labContainerTitle, .individualLabStats {
+  display: flex;
+  align-items: center;
+}
+
+.labContainerTitle button {
+  width: 100px;
+}
+
+.labContainerH3 {
+  font-size: 2.8rem;
+}
+
+.labIcon {
+  width: 35px;
+  margin-right: 1.5rem;
+}
+
+.individualLabDescription {
+  margin: 2rem 0;
+}
+
 
 /* FOOTER */
 footer {
