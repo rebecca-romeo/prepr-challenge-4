@@ -105,12 +105,19 @@ header p {
 
 /* FOOTER */
 footer {
-  color: #727d92;
+  border-top: 1px solid #D8DCDF;
+}
+
+.footerContainer {
+  color: #727D92;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 0;
 }
 
 footer a {
+  padding: 0 5px;
   font-weight: bold;
-  padding: 10px 5px;
 }
