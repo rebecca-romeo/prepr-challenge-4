@@ -2,9 +2,9 @@ import IndividualLab from "./labs/IndividualLab";
 
 function Main() {
   return (
-    <div className="main">
+    <main>
       <IndividualLab />
-    </div>
+    </main>
   );
 }
 
