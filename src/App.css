@@ -108,7 +108,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 18rem 0;
+  padding: 18rem 0 14rem;
 }
 
 header h1 {
@@ -137,6 +137,21 @@ header div {
   border: 1px solid #DCDCDC;
   border-radius: 0 10px 10px 0;
   margin: 6.5rem 0;
+}
+.exploreRecommendations {
+  /* border: 2px solid red; */
+  margin: 2rem auto;
+  width: 90%;
+}
+.exploreRecommendations li {
+  display: inline-block;
+  font-size: 1.3rem;
+  background-color: #F3F4F8;
+  border: 1px solid #C8C8C8;
+  border-radius: 10px;
+  padding: 0.8rem 0.6rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 /* FOOTER */

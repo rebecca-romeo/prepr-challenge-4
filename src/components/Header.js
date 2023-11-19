@@ -12,6 +12,21 @@ const Header = () => {
 
         <h2 className="poppins">Click an interest to narrow your recommendations.</h2>
 
+        <div className="arial exploreRecommendations">
+          <ul>
+            <li>Wellbeing</li>
+            <li>Customer Loyalty</li>
+            <li>Hashtags</li>
+            <li>Journaling</li>
+            <li>Technology Management</li>
+            <li>Graphic Design</li>
+            <li>HTML</li>
+            <li>Foodservice Distribution</li>
+            <li>Digital toolkit</li>
+            <li>Databases</li>
+          </ul>
+        </div>
+
       </div>
     </header>
   )
