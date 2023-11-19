@@ -2,17 +2,17 @@ const Header = () => {
   return (
     <header>
       <div>
-        <h1 className="poppins">Explore Your Interests</h1>
-        <p className='arial'>We’ll recommend content based on your interests we’ve listed here. <br /> Feel free to add or remove topics to customize your experience !</p>
+        <h1 className="poppins bold">Explore Your Interests</h1>
+        <p>We’ll recommend content based on your interests we’ve listed here. <br /> Feel free to add or remove topics to customize your experience !</p>
 
         <form className="headerSearchBar">
           <label htmlFor="headerBarSearch"></label>
-          <input type="text" placeholder="Search skills" name="headerBarSearch" className="arial" />
+          <input type="text" placeholder="Search skills" name="headerBarSearch" />
         </form>
 
-        <h2 className="poppins">Click an interest to narrow your recommendations.</h2>
+        <h2 className="poppins bold">Click an interest to narrow your recommendations.</h2>
 
-        <div className="arial exploreRecommendations">
+        <div className="exploreRecommendations">
           <ul>
             <li>Wellbeing</li>
             <li>Customer Loyalty</li>
