@@ -2,6 +2,7 @@ import MainNav from "./main/navigation/MainNav";
 import Filters from "./main/navigation/Filters";
 import IndividualLabCard from "./main/labs/IndividualLabCard";
 import IndividualChallengeCard from "./main/challenges/IndividualChallengeCard";
+import IndividualResourceCard from "./main/resources/IndividualResourceCard";
 import PagesNav from "./main/navigation/PagesNav";
 
 
@@ -22,6 +23,7 @@ function Main() {
           <IndividualLabCard />
           <IndividualChallengeCard />
           <IndividualChallengeCard />
+          <IndividualResourceCard />
         </div>
       </section>
 
