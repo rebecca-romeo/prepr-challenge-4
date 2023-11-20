@@ -4,7 +4,7 @@ import userImg from '../assets/userImg.png'
 const NavBar = () => {
   return (
     <div className="navContainer">
-      <nav className='bold'>
+      <nav className='headerNav bold'>
 
         <div>
           <a href="https://preprlabs.org/explore"><img src={preprLogo} alt="prepr labs logo" className="preprLogo" /></a>
