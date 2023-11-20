@@ -16,7 +16,8 @@ a,
 ul,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -36,7 +37,7 @@ ul {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1320px;
   width: 95%;
   margin: 0 auto;
 }
@@ -55,7 +56,6 @@ ul {
   border: none;
   padding: 1.5rem 1rem;
   border-radius: 5px;
-  font-family: 'Arial', sans-serif;
 }
 
 /* NAVIGATION */
@@ -168,7 +168,7 @@ header div {
   border: 1px solid #C8C8C8;
   border-radius: 10px;
   padding: 0.8rem;
-  margin: 1rem;
+  margin: 1rem 1.5rem 0.8rem 0;
   cursor: pointer;
 }
 
@@ -176,8 +176,7 @@ header div {
 
 main {
   background-color: #F3F7FC;
-  height: 500px;
-  /* padding-top: 5rem; */
+  padding-bottom: 5rem;
 }
 
 .blue {
@@ -189,7 +188,6 @@ main {
 }
 
 .navBarMainSection ul {
-  /* border: 2px solid red; */
   justify-content: space-between;
   text-align: center;
   font-size: 3.2rem;
@@ -204,60 +202,125 @@ main {
   cursor: pointer;
 }
 
-.individualLabContainer {
+.pagesNav ul {
+  justify-content: flex-end;
+}
+
+.pagesNav li {
+  padding: 0.5rem 1rem;
+  border: 1px solid #13b15c;
+}
+
+.pagesNav li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagesNav li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.test {
+  display: flex;
+  /* border: 2px solid red; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.testContainer1 {
+  width: 17%;
+}
+
+.testContainer2 {
+  width: 80%;
+}
+
+.filters {
+  background-color: white;
+  /* border: 2px solid blue; */
+  border-radius: 10px 10px 0 0;
+  box-shadow: 3px 4px 5px 0px #B8BBBF;
+}
+.filters h4 {
+  font-size: 2rem;
+  padding: 1rem;
+
+}
+
+.filters div {
+  background-color: #498CCE;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.cardContainer {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  width: 80%;
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   border-radius: 10px;
-  margin: 0 0 0 20rem;
+  margin: 1rem 0;
   box-shadow: 4px 5px 6px 1px #B8BBBF;
+  /* border: 2px solid black; */
 }
 
-.individualLabContainerLeft {
-  width: 20%;
+.cardContainerLeft {
+  width: 25%;
 }
 
-.individualLabContainerLeft img {
-  width: 250px;
+.cardContainerLeft img {
+  max-width: 250px;
+  min-width: 200px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
-.heart, .share {
-  padding: 0 0.5rem 0 1rem;
+.heart, .share, .views {
+  padding: 0 0.6rem 0 1.5rem;
 }
 
-.individualLabContainerLeft p {
+.cardContainerLeft p {
 padding: 2rem 0;
 }
 
-.individualLabContainerRight {
+.cardContainerRight {
   width: 75%;
-  /* padding-left: 1.5rem; */
+  padding-left: 2.5rem;
 }
 
-.labContainerTitle, .individualLabStats {
+.cardTitle, .cardStats {
   display: flex;
   align-items: center;
 }
 
-.labContainerTitle button {
+.cardTitle button {
   width: 100px;
 }
 
-.labContainerH3 {
+.cardH3 {
   font-size: 2.8rem;
 }
 
-.labIcon {
+.cardIcon {
   width: 35px;
   margin-right: 1.5rem;
 }
 
-.individualLabDescription {
+.cardDescription {
   margin: 2rem 0;
 }
+
+.cardImgBorder {
+  border: 0.5px solid #DEE2E6;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+
+
 
 
 /* FOOTER */
