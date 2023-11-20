@@ -305,11 +305,6 @@ padding: 2rem 0;
   font-size: 2.8rem;
 }
 
-.cardIcon {
-  width: 35px;
-  margin-right: 1.5rem;
-}
-
 .cardDescription {
   margin: 2rem 0;
 }
@@ -319,6 +314,28 @@ padding: 2rem 0;
   padding: 0.4rem;
   border-radius: 5px;
 }
+
+.cardIcon {
+  max-width: 35px;
+  margin-right: 1.5rem;
+}
+
+.starIcon {
+  color: #aaa;
+  margin: 3rem 0;
+}
+
+.starIcon i {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.starIcon i:hover {
+  color: #FFBD56;
+  transition: 0.4s;
+}
+
+
 
 
 
