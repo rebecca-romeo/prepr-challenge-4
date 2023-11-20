@@ -6,7 +6,6 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-
 html {
   font-size: 62.5%;
 }
@@ -67,7 +66,7 @@ ul {
   width: 100%;
 }
 
-nav {
+.headerNav {
   padding: 10px 30px;
   color: #8b8b8b;
   font-size: 1.5rem;
@@ -87,7 +86,7 @@ nav ul {
   align-items: center;
 }
 
-nav li {
+.headerNav li {
   padding: 0 2.2rem;
 }
 
@@ -105,8 +104,6 @@ nav li {
   max-width: 50px;
   min-width: 50px;
 }
-
-
 
 .navSearchBar input {
   padding: 0.9rem;
@@ -175,18 +172,36 @@ header div {
   cursor: pointer;
 }
 
-
-
 /* MAIN - LABS */
 
 main {
   background-color: #F3F7FC;
   height: 500px;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .blue {
   color: #498CCE;
+}
+
+.navBarMainSection {
+  padding: 2rem 0 3rem 0;
+}
+
+.navBarMainSection ul {
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  text-align: center;
+  font-size: 3.2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px 1px #B8BBBF;
+  padding: 0.5rem;
+}
+
+.navBarMainSection li {
+  width: calc(100% / 4);
+  cursor: pointer;
 }
 
 .individualLabContainer {
@@ -195,7 +210,6 @@ main {
   background-color: white;
   width: 80%;
   padding: 1.5rem;
-  /* border: 1px solid #E9EDF2; */
   border-radius: 10px;
   margin: 0 0 0 20rem;
   box-shadow: 4px 5px 6px 1px #B8BBBF;
@@ -217,7 +231,6 @@ main {
 .individualLabContainerLeft p {
 padding: 2rem 0;
 }
-
 
 .individualLabContainerRight {
   width: 75%;
