@@ -11,7 +11,7 @@ export const ThemeContext = createContext(null);
 
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(null);
 
   const toggleTheme = () => {
     setTheme((current) => (current === null ? "dark" : null));
