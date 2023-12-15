@@ -6,6 +6,7 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* SITE WIDE STYLING */
 html {
   font-size: 62.5%;
 }
@@ -58,7 +59,34 @@ ul {
   border-radius: 5px;
 }
 
-/* NAVIGATION */
+/* DARK MODE THEME */
+#dark,
+#dark main,
+#dark .headerNav,
+#dark footer {
+  color: white;
+  background-color: rgb(44, 41, 41);
+}
+
+#dark header {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+#dark .navBarIcons li {
+  color: rgb(210, 209, 209);
+}
+
+#dark .greyButton,
+#dark .exploreRecommendations li,
+#dark .navBarMainSection ul {
+  background-color:#202639;
+}
+
+#dark .cardContainer,
+#dark aside {
+  background-color: #2c334a;
+}
+
+/* HEADER NAVIGATION */
 .navContainer {
   border-bottom: 1px solid #D8DCDF;
   position: fixed;
@@ -112,11 +140,7 @@ nav ul {
   width: 260px;
 }
 
-/* .navSearchBar ::placeholder {
-color: red;
-} */
-
-/* HEADER */
+/* HEADER / EXPLORE SECTION */
 header {
   background: linear-gradient(90deg, rgba(213, 255, 198, 1) 0%, rgba(124, 210, 241, 1) 100%);
   min-height: calc(100vh + 40px);
@@ -155,7 +179,6 @@ header div {
 }
 
 .exploreRecommendations {
-  /* border: 2px solid red; */
   margin: 2rem auto;
   width: 90%;
 }
@@ -172,7 +195,7 @@ header div {
   cursor: pointer;
 }
 
-/* MAIN - LABS */
+/* MAIN SECTION AND CARDS */
 
 main {
   background-color: #F3F7FC;
@@ -223,7 +246,6 @@ main {
 
 .test {
   display: flex;
-  /* border: 2px solid red; */
   width: 100%;
   justify-content: space-between;
 }
@@ -238,7 +260,6 @@ main {
 
 .filters {
   background-color: white;
-  /* border: 2px solid blue; */
   border-radius: 10px 10px 0 0;
   box-shadow: 3px 4px 5px 0px #B8BBBF;
 }
@@ -265,7 +286,6 @@ main {
   border-radius: 10px;
   margin: 1rem 0;
   box-shadow: 4px 5px 6px 1px #B8BBBF;
-  /* border: 2px solid black; */
 }
 
 .cardContainerLeft {
@@ -335,18 +355,13 @@ padding: 2rem 0;
   transition: 0.4s;
 }
 
-
-
-
-
-
 /* FOOTER */
 footer {
   border-top: 1px solid #D8DCDF;
+  color: #727D92;
 }
 
 .footerContainer {
-  color: #727D92;
   display: flex;
   justify-content: space-between;
   align-items: center;
