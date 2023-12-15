@@ -1,3 +1,4 @@
+import AccessibilityButton from './components/accessbility/AccessbilityButton';
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -20,6 +21,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
+        <AccessibilityButton />
         <NavBar />
         <Header
           onChange={toggleTheme}
