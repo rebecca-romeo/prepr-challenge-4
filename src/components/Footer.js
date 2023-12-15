@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="arial">
+    <footer>
       <div className="footerContainer wrapper">
         <p>v24.0.7</p>
         <div>
