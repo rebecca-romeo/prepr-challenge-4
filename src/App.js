@@ -14,14 +14,18 @@ function App() {
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
-    setTheme((current) => (current === "light" ? "dark" : "light"));
+    setTheme((current) => (current === null ? "dark" : null));
   };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <NavBar />
-        <Header />
+        <Header
+          onChange={toggleTheme}
+          checked={theme === 'dark'}
+          theme={theme}
+        />
         <Main />
         <Footer />
       </div>
