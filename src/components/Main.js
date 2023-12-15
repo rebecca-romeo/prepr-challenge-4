@@ -1,29 +1,18 @@
-import MainNav from "./main/navigation/MainNav";
 import Filters from "./main/navigation/Filters";
-import IndividualLabCard from "./main/labs/IndividualLabCard";
-import IndividualChallengeCard from "./main/challenges/IndividualChallengeCard";
-import IndividualResourceCard from "./main/resources/IndividualResourceCard";
-import PagesNav from "./main/navigation/PagesNav";
+import Tabs from "./main/Tabs";
 
 
 function Main() {
   return (
     <main>
-      <MainNav />
-      <PagesNav />
-      <section className="test wrapper">
+      <section className="main wrapper">
 
-        <div className="testContainer1">
+        <div className="mainContainer1">
         <Filters />
         </div>
 
-        <div className="testContainer2">
-          {/* <IndividualLabCard />
-          <IndividualLabCard /> */}
-          <IndividualLabCard />
-          <IndividualChallengeCard />
-          <IndividualChallengeCard />
-          <IndividualResourceCard />
+        <div className="mainContainer2">
+          <Tabs />
         </div>
       </section>
 

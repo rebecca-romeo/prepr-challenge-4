@@ -6,6 +6,7 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* SITE WIDE STYLING */
 html {
   font-size: 62.5%;
 }
@@ -58,7 +59,39 @@ ul {
   border-radius: 5px;
 }
 
-/* NAVIGATION */
+/* DARK MODE THEME */
+#dark,
+#dark main,
+#dark .headerNav,
+#dark footer {
+  color: white;
+  background-color: rgb(44, 41, 41);
+}
+
+#dark header {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+#dark .navBarIcons li {
+  color: rgb(210, 209, 209);
+}
+
+#dark .greyButton,
+#dark .exploreRecommendations li,
+#dark .tabs {
+  background-color:#202639;
+}
+
+#dark .cardContainer,
+#dark aside {
+  background-color: #2c334a;
+}
+
+/* #dark .tabs {
+  color: white;
+  background-color: black;
+} */
+
+/* HEADER NAVIGATION */
 .navContainer {
   border-bottom: 1px solid #D8DCDF;
   position: fixed;
@@ -90,6 +123,10 @@ nav ul {
   padding: 0 2.2rem;
 }
 
+.headerNav li:hover {
+color: rgb(12, 159, 12);
+}
+
 .navBarIcons li {
   font-size: 2.5rem;
   color: #56565a;
@@ -112,19 +149,29 @@ nav ul {
   width: 260px;
 }
 
-/* .navSearchBar ::placeholder {
-color: red;
-} */
-
-/* HEADER */
+/* HEADER / EXPLORE SECTION */
 header {
   background: linear-gradient(90deg, rgba(213, 255, 198, 1) 0%, rgba(124, 210, 241, 1) 100%);
   min-height: calc(100vh + 40px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 18rem 0 14rem;
+}
+
+header .switch {
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin-top: -40px;
+  padding-bottom: 40px;
+  text-align: right;
+  position:sticky;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 header h1 {
@@ -155,7 +202,6 @@ header div {
 }
 
 .exploreRecommendations {
-  /* border: 2px solid red; */
   margin: 2rem auto;
   width: 90%;
 }
@@ -172,34 +218,49 @@ header div {
   cursor: pointer;
 }
 
-/* MAIN - LABS */
+/* MAIN SECTION AND CARDS */
 
 main {
   background-color: #F3F7FC;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 .blue {
   color: #498CCE;
 }
 
-.navBarMainSection {
-  padding: 2rem 0 3rem 0;
-}
-
-.navBarMainSection ul {
+.tabsGroup {
+  display: flex;
   justify-content: space-between;
   text-align: center;
   font-size: 3.2rem;
-  background-color: white;
   border-radius: 10px;
   box-shadow: 4px 5px 6px 1px #B8BBBF;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-.navBarMainSection li {
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.active-tabs,
+#dark .active-tabs {
+  background-color: #498CCE;
+}
+
+.tabs {
   width: calc(100% / 4);
-  cursor: pointer;
+}
+
+.pagesNav {
+  padding-top: 2rem;
+  font-weight: 300;
+  margin-left: 5rem;
 }
 
 .pagesNav ul {
@@ -221,24 +282,22 @@ main {
   border-bottom-right-radius: 5px;
 }
 
-.test {
+.main {
   display: flex;
-  /* border: 2px solid red; */
   width: 100%;
   justify-content: space-between;
 }
 
-.testContainer1 {
+.mainContainer1 {
   width: 17%;
 }
 
-.testContainer2 {
+.mainContainer2 {
   width: 80%;
 }
 
 .filters {
   background-color: white;
-  /* border: 2px solid blue; */
   border-radius: 10px 10px 0 0;
   box-shadow: 3px 4px 5px 0px #B8BBBF;
 }
@@ -263,9 +322,8 @@ main {
   background-color: white;
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   border-radius: 10px;
-  margin: 1rem 0;
+  margin: 2rem 0;
   box-shadow: 4px 5px 6px 1px #B8BBBF;
-  /* border: 2px solid black; */
 }
 
 .cardContainerLeft {
@@ -335,18 +393,13 @@ padding: 2rem 0;
   transition: 0.4s;
 }
 
-
-
-
-
-
 /* FOOTER */
 footer {
   border-top: 1px solid #D8DCDF;
+  color: #727D92;
 }
 
 .footerContainer {
-  color: #727D92;
   display: flex;
   justify-content: space-between;
   align-items: center;

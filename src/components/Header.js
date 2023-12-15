@@ -1,6 +1,16 @@
-const Header = () => {
+import ReachSwitch from 'react-switch';
+
+const Header = (props) => {
   return (
     <header>
+      <div className='switch'>
+      <label>{props.theme === null ? <i class="bi bi-brightness-high-fill"></i> : <i class="bi bi-moon-stars-fill"></i>}</label>
+        <ReachSwitch
+          onChange={props.onChange}
+          checked={props.checked}
+        />
+      </div>
+
       <div>
         <h1 className="poppins bold">Explore Your Interests</h1>
         <p>We’ll recommend content based on your interests we’ve listed here. <br /> Feel free to add or remove topics to customize your experience !</p>
@@ -29,6 +39,7 @@ const Header = () => {
 
       </div>
     </header>
+
   )
 }
 
