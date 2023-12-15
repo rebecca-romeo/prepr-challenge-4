@@ -118,6 +118,10 @@ nav ul {
   padding: 0 2.2rem;
 }
 
+.headerNav li:hover {
+color: rgb(12, 159, 12);
+}
+
 .navBarIcons li {
   font-size: 2.5rem;
   color: #56565a;
@@ -145,10 +149,24 @@ header {
   background: linear-gradient(90deg, rgba(213, 255, 198, 1) 0%, rgba(124, 210, 241, 1) 100%);
   min-height: calc(100vh + 40px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 18rem 0 14rem;
+}
+
+header .switch {
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin-top: -40px;
+  padding-bottom: 40px;
+  text-align: right;
+  position:sticky;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 header h1 {
